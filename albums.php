@@ -50,7 +50,8 @@
       echo "No hay productos disponibles.";
   } ?>
   </div>
-    
+    <?php     include('footer.php');
+    ?>
 </body>
 
 </html>

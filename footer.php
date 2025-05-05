@@ -11,12 +11,12 @@
 <body>
     <div class="footer">
         <div class="footer-content">
-            <a href="atencionClientes.html" class="footer-link">
+            <a href="atencionClientes.php" class="footer-link">
                 <img src="img/icons/clientes.png" alt="Icono Atención a Clientes" class="icon-footer"> Atención A
                 Clientes
             </a>
             <span class="footer-divider">|</span>
-            <a href="nosotros.html" class="footer-link">
+            <a href="nosotros.php" class="footer-link">
                 <img src="img/icons/about.png" alt="Icono Sobre Nosotros" class="icon-footer"> Sobre Nosotros
             </a>
             <span class="footer-divider">|</span>

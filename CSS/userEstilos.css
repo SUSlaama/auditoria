@@ -145,4 +145,27 @@
   text-align: right; /* Alinea el contenido de la columna a la derecha */
 }
 
-  
+#eliminaModal .modal-content {
+  border: 2px solid #ffc107;
+  border-radius: 15px;
+}
+
+#eliminaModal .modal-header {
+  background: #fff3cd;
+  border-bottom: none;
+}
+
+#eliminaModal .modal-title {
+  color: #856404;
+  font-family: 'Outfit', sans-serif;
+}
+
+#eliminaModal .modal-footer .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  transition: all 0.3s;
+}
+
+#eliminaModal .modal-footer .btn-danger:hover {
+  background-color: #bb2d3b;
+}  

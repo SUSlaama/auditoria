@@ -14,9 +14,7 @@
 <body>
 
   <?php include 'header.php'?>
-  <?php require 'conexion.php'?>
   
-
   <div class='contenedor-logo-subtienda'>
   <img src='img/MORE.png' class='logo-subtienda' />
 </div>
@@ -47,7 +45,8 @@
   // Cierra la conexión a la base de datos.
   $conn->close();
   ?>
-    
+  <?php     include('footer.php');
+    ?>
 </body>
 
 </html>

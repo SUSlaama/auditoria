@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Sobre nosotros</title>
-    <link rel="stylesheet" href="nosotros.css">
-</head>
+<meta charset="UTF-8">
+    <title>Atención a clientes - M-3RACHA</title>
 
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/userEstilos.css">
+    <link rel="stylesheet" href="CSS/nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+
+</head>
 <body>
+
+    <?php include 'header.php'; ?>
+
     <div class="sobre-nosotros">
         <div class="contenido">
             <div class="texto">
@@ -38,11 +48,10 @@
                 <p>STRAY KIDS AROUND THE WORLD</p>
             </div>
         </div>
-        <div class="imagen-grupo">
-            <!-- Asumiendo que tienes una imagen en escala de grises de Stray Kids -->
-            <img src="img/nosotros.PNG" alt="Stray Kids">
-        </div>
     </div>
+
+    <?php include 'footer.php'; ?>
+
 </body>
 
 </html>
