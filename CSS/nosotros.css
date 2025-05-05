@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+.logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+.sobre-nosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: white; /* O cualquier otro color de fondo que prefieras */
+    padding-top: 100px;
+}
+
+.contenido {
+    width: 60%;
+}
+
+.imagen-grupo {
+    width: 40%;
+}
+
+.imagen-grupo img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+blockquote {
+    font-style: verdana;
+    margin: 0.5em 0;
+}
+
+.texto p {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px; /* o el espacio que prefieras */
+    padding-right: 20px; /* o el espacio que prefieras */
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 1em;
+    
+}
+
+.footer {
+    font-weight: verdana;
+    margin-top: 2em;
+}
+
+/* Ajusta los tamaños y márgenes según sea necesario */
