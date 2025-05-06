@@ -1,5 +1,4 @@
 <?php
-define('BASE_URL', '/');
 require 'config/config.php';
 require 'config/database.php';
 $db = new Database();
@@ -56,37 +55,7 @@ if ($id== '' || $token == ''){
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="header">
-        <!-- Barra de navegación -->
-        <nav class="navbar">
-            <div class="menu-icon">
-                <a href='<?php echo BASE_URL; ?>'>
-                    <img src="<?php echo BASE_URL; ?>img/m3.png" class="logo-menu">
-                </a>
-            </div>
-            <div class="search-bar">
-                <!-- Barra de búsqueda -->
-                <form id="search-form" action="<?php echo BASE_URL; ?>Busqueda.php" method="GET">
-                    <i class="fas fa-search" id="search-icon"></i>
-                    <input type="text" name="q" id="search-input" placeholder="SEARCH">
-                </form>
-            </div>
-            <div class="nav-links">
-                <!-- Enlaces de navegación -->
-                <a href="<?php echo BASE_URL; ?>clothes.php">CLOTHES</a>
-                <a href="<?php echo BASE_URL; ?>photocards.php">PHOTOCARDS</a>
-                <a href="<?php echo BASE_URL; ?>albums.php">ALBUMS</a>
-                <a href="<?php echo BASE_URL; ?>more.php">MORE...</a>
-            </div>
-            <div class="nav-icons">
-                <!-- Iconos de carrito y usuario -->
-                <a href="checkout.php" id="carrito-icono"><span id ="num_cart"><?php echo $num_cart ?></span>
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-
-            </div>
-        </nav>
-    </header>    
+    <?php include 'header.php';?>   
 
 <!-- ------------------------------------------------------------------------------------------------ -->
 
