@@ -1,0 +1,50 @@
+.footer {
+    width: 100%;
+    background-color: #595656; /* Color de fondo del footer */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-img {
+    width: 100px; /* Ajusta este valor al tamaño deseado para las imágenes */
+    height: auto;
+}
+
+.footer-content {
+    text-align: center;
+    flex-grow: 1; /* Asegura que el contenido se expanda para ocupar el espacio disponible */
+}
+
+.footer-link {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* No subrayado */
+    margin: 0 20px; /* Ajusta el margen según sea necesario */
+    font-size: 1em; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.footer-divider {
+    color: white; /* Color del divisor */
+    margin: 0 10px; /* Espacio alrededor del divisor */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.social-icon {
+    width: 50px; /* Tamaño de los iconos de redes sociales */
+    height: auto;
+    margin: 0 10px; /* Espacio alrededor de los iconos */
+}
+
+.icon-footer {
+    width: 30px; /* Ajusta al tamaño de tus iconos */
+    height: 30px; /* Ajusta al tamaño de tus iconos */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}

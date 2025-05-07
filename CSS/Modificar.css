@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+
+.estilosfoto-img {
+    width: auto;
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block;
+    margin-bottom: 30px; /* Espacio debajo de la imagen */
+}
+
+
+.configuration-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 1200px;
+    margin-top: -1000px;
+}
+
+.configuration-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.form-group input:last-child {
+    margin-right: 0;
+}
+
+.form-instructions {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    list-style: inside;
+}
+
+.action-container button {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-container button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+}
