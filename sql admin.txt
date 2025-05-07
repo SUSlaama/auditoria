@@ -1,0 +1,10 @@
+contraseña admin
+AdminR18$ o la que tu quieras mientras sea compleja
+
+CREATE TABLE usuarios (
+    idUsuario INT AUTO_INCREMENT PRIMARY KEY,  -- ID único para cada usuario
+    usuario VARCHAR(100) NOT NULL UNIQUE,      -- Nombre de usuario
+    password VARCHAR(255) NOT NULL,             -- Contraseña encriptada
+    nombre VARCHAR(100),                        -- Nombre completo del usuario (opcional)
+    rol ENUM('admin', 'usuario') DEFAULT 'usuario' -- Rol (admin o usuario común)
+);
