@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-$conexion = new mysqli("sql204.infinityfree.com", "if0_37860573", "Vitacore05", "if0_37860573_m3racha");
+$conexion = new mysqli("localhost", "root", "", "m3racha");
 
 if ($conexion->connect_error) {
     die("Conexión fallida: " . $conexion->connect_error);

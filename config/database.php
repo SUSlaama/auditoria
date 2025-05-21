@@ -1,10 +1,10 @@
 <?php
 
 class Database{
-    private $hostname = "sql204.infinityfree.com";
-    private $database = "if0_37860573_m3racha";
-    private $username = "if0_37860573";
-    private $password = "Vitacore05";
+    private $hostname = "localhost";
+    private $database = "m3racha";
+    private $username = "root";
+    private $password = "";
     private $charset = "utf8";
 
 

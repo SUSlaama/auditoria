@@ -19,10 +19,10 @@ function write_log($message, $type = 'INFO') {
 write_log("Database backup process started");
 
 // --- CONFIGURACIÓN ---
-$db_host   = "sql204.infinityfree.com";
-$db_user   = "if0_37860573";
-$db_pass   = "Vitacore05";
-$db_name   = "if0_37860573_m3racha";
+$db_host   = "localhost";
+$db_user   = "root";
+$db_pass   = "";
+$db_name   = "m3racha";
 
 // Directorio donde se guardarán los respaldos 
 $backup_dir = __DIR__ . '/my_db_backups';

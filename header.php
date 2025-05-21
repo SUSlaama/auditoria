@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-define('BASE_URL', '/');
+define('BASE_URL', '/auditoria/');
 require 'config/config.php';
 
 ?>
