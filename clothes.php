@@ -1,14 +1,16 @@
 <?php
-  require 'config/config.php';
-  require 'config/database.php';
-  $db = new Database();
-  $con = $db->conectar();  
-  // Consulta SQL para obtener todos los productos.
-  $sql = $con->prepare("SELECT * FROM producto where categoria='clothes'");
-  $sql->execute();
-  $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+require 'config/config.php';
+require 'config/database.php';
 
+$db = new Database();
+$con = $db->conectar();
+
+// Consulta SQL para obtener todos los productos de la categoría 'clothes'
+$sql = $con->prepare("SELECT * FROM producto WHERE categoria = 'CLOTHES'");
+$sql->execute();
+$resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,34 +26,30 @@
 </head>
 <body>
 
-  <?php include 'header.php'?>
-  
+<?php include 'header.php'; ?>
 
-  <div class='contenedor-logo-subtienda'>
+<div class='contenedor-logo-subtienda'>
   <img src='img/CLOTHES.png' class='logo-subtienda' />
 </div>
 
-
 <div class='productos-contenedor'>
-  <?php if (count($resultado) > 0) {
-    // Muestra una vista previa del producto.
-      foreach ($resultado as $producto) { ?>
-          
-        <a href='details.php?id=<?php echo $producto['idProducto'];?>&token=<?php 
-        echo hash_hmac('sha1', $producto['idProducto'], KEY_TOKEN);?>' class='producto-link'>
-        <div class='producto'>"
-        <img src='<?php echo $producto['img']?>' alt='Imagen del producto' />"
-        <h2><?php echo $producto['nombre'];?></h2>"
-        <p>$<?php echo number_format($producto['precio'], 2, '.', ',');?></p>"
-        </div>";
-        </a>
-     <?php }
-  } else {
-      echo "No hay productos disponibles.";
-  } ?>
-  </div>
-    <?php     include('footer.php');
-    ?>
-</body>
+  <?php if (count($resultado) > 0): ?>
+    <?php foreach ($resultado as $producto): ?>
+      <a href='details.php?id=<?= $producto['idProducto']; ?>&token=<?= hash_hmac('sha1', $producto['idProducto'], KEY_TOKEN); ?>' class='producto-link'>
+        <div class='producto'>
+          <img src='<?= $producto['img']; ?>' alt='Imagen del producto' />
+          <h2><?= $producto['nombre']; ?></h2>
+          <p><?= $producto['descripcion']; ?></p> <!-- Descripción mostrada aquí -->
+          <p>$<?= number_format($producto['precio'], 2, '.', ','); ?></p>
+        </div>
+      </a>
+    <?php endforeach; ?>
+  <?php else: ?>
+    <p>No hay productos disponibles.</p>
+  <?php endif; ?>
+</div>
 
+<?php include 'footer.php'; ?>
+
+</body>
 </html>

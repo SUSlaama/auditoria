@@ -7,7 +7,6 @@ $con = $db->conectar();
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>M-3RACHA</title>
@@ -17,22 +16,21 @@ $con = $db->conectar();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;600;700&display=swap" rel="stylesheet"> 
 </head>
-
 <body>
-    <?php include 'header.php' ?>
+    <?php include 'header.php'?>   
 
 
 
-    <div class="slogan-container">
-        <img src="img/slogan.PNG" alt="slogan">
-    </div>
+       <div class="slogan-container">
+            <img src="img/slogan.PNG" alt="slogan">
+        </div>
 
 
-    <div class="portada-container">
-        <img src="img/Portada.png" alt="Portada">
-    </div>
+        <div class="portada-container">
+            <img src="img/Portada.png" alt="Portada">
+        </div>
     </div>
 
     <?php
@@ -40,5 +38,4 @@ $con = $db->conectar();
     include('footer.php');
     ?>
 </body>
-
 </html>

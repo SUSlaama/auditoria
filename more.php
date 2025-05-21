@@ -40,12 +40,11 @@
   } else {
         echo "<h2 style='margin-top: 30px;'>No hay productos disponibles</h2>";
   }
-  echo "</div>"; // Cierre de la etiqueta <div>
-
-  // Cierra la conexión a la base de datos.
+  echo "</div>";
+  
   $conn->close();
   ?>
-  <?php     include('footer.php');
+  <?php include('footer.php');
     ?>
 </body>
 

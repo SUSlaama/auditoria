@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-$conexion = new mysqli("localhost", "root", "", "m3racha");
+$conexion = new mysqli("sql204.infinityfree.com", "if0_37860573", "Vitacore05", "if0_37860573_m3racha");
 
 if ($conexion->connect_error) {
     die("Conexión fallida: " . $conexion->connect_error);
@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     if (!empty($usuario) && !empty($password)) {
+				// Inyeccion SQL
         $sql = "SELECT idUsuario, usuario, password, rol FROM usuarios WHERE usuario = ?";
         $stmt = $conexion->prepare($sql);
         $stmt->bind_param("s", $usuario);
