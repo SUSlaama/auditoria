@@ -1,0 +1,45 @@
+/* Estilos para la lista de resultados */
+ul.resultados {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.resultados li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para las imágenes de los productos */
+ul.resultados li img {
+    max-width: 100px; /* Ajusta esto según tus necesidades */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+/* Estilos para el texto de los resultados */
+ul.resultados li .descripcion {
+    vertical-align: top;
+    display: inline-block;
+}
+
+/* Estilos para el título del resultado */
+ul.resultados li .titulo {
+    font-weight: bold;
+}
+
+.producto-link {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit;        /* Hereda el color del texto */
+    display: block;        /* Hace que el enlace se comporte como un bloque */
+    color: black;
+}
+
+.producto-link  {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: block;        /* Hace que el enlace se comporte como un bloque */
+    color: black;
+}

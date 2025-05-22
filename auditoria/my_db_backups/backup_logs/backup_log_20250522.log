@@ -1,0 +1,34 @@
+[2025-05-22 01:59:19] [INFO] Database backup process started
+[2025-05-22 01:59:19] [INFO] Configurando respaldo en: /home/vol19_2/infinityfree.com/if0_37860573/htdocs/my_db_backups/my_db_backups/if0_37860573_m3racha_backup_20250522_015919.sql
+[2025-05-22 01:59:19] [INFO] Acceso autorizado con clave correcta
+[2025-05-22 01:59:19] [INFO] Intentando conectar a la base de datos: sql204.infinityfree.com/if0_37860573_m3racha
+[2025-05-22 01:59:19] [INFO] Conexión a la base de datos establecida correctamente
+[2025-05-22 01:59:19] [INFO] Obteniendo lista de tablas
+[2025-05-22 01:59:19] [INFO] Se encontraron 6 tablas en la base de datos
+[2025-05-22 01:59:19] [INFO] Desactivando verificación de claves foráneas para el respaldo
+[2025-05-22 01:59:19] [INFO] Procesando tabla: carrito
+[2025-05-22 01:59:19] [INFO] Estructura de la tabla `carrito` obtenida correctamente
+[2025-05-22 01:59:19] [INFO] Tabla `carrito`: encontradas 0 filas para respaldar
+[2025-05-22 01:59:19] [INFO] Procesando tabla: carritoproducto
+[2025-05-22 01:59:19] [INFO] Estructura de la tabla `carritoproducto` obtenida correctamente
+[2025-05-22 01:59:19] [INFO] Tabla `carritoproducto`: encontradas 0 filas para respaldar
+[2025-05-22 01:59:19] [INFO] Procesando tabla: direccion
+[2025-05-22 01:59:19] [INFO] Estructura de la tabla `direccion` obtenida correctamente
+[2025-05-22 01:59:19] [INFO] Tabla `direccion`: encontradas 0 filas para respaldar
+[2025-05-22 01:59:19] [INFO] Procesando tabla: producto
+[2025-05-22 01:59:19] [INFO] Estructura de la tabla `producto` obtenida correctamente
+[2025-05-22 01:59:19] [INFO] Tabla `producto`: encontradas 11 filas para respaldar
+[2025-05-22 01:59:19] [INFO] Finalizó el respaldo de 11 filas de la tabla `producto`
+[2025-05-22 01:59:19] [INFO] Procesando tabla: usuario
+[2025-05-22 01:59:19] [INFO] Estructura de la tabla `usuario` obtenida correctamente
+[2025-05-22 01:59:19] [INFO] Tabla `usuario`: encontradas 0 filas para respaldar
+[2025-05-22 01:59:19] [INFO] Procesando tabla: usuarios
+[2025-05-22 01:59:19] [INFO] Estructura de la tabla `usuarios` obtenida correctamente
+[2025-05-22 01:59:19] [INFO] Tabla `usuarios`: encontradas 2 filas para respaldar
+[2025-05-22 01:59:19] [INFO] Finalizó el respaldo de 2 filas de la tabla `usuarios`
+[2025-05-22 01:59:19] [INFO] Reactivando verificación de claves foráneas
+[2025-05-22 01:59:19] [INFO] Conexión a la base de datos cerrada
+[2025-05-22 01:59:19] [INFO] Intentando guardar el archivo de respaldo (5.443359375 KB)
+[2025-05-22 01:59:19] [INFO] Archivo de respaldo guardado correctamente
+[2025-05-22 01:59:19] [SUCCESS] Respaldo completado exitosamente: if0_37860573_m3racha_backup_20250522_015919.sql
+[2025-05-22 01:59:19] [INFO] Proceso de respaldo finalizado
