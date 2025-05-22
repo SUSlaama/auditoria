@@ -9,6 +9,7 @@ if ($conexion->connect_error) {
 $mensaje = ""; // Variable para almacenar el mensaje
 
 // Tomamos usuario y password de POST o GET (para pruebas desde URL)
+// prueba
 if ($_SERVER["REQUEST_METHOD"] == "POST" || isset($_GET['usuario'])) {
     $usuario = $_POST['usuario'] ?? $_GET['usuario'] ?? '';
     $password = $_POST['password'] ?? $_GET['password'] ?? '';
